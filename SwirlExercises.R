@@ -17,7 +17,7 @@ swirl()
 # When you are at the R prompt (>):
 # -- Typing skip() allows you to skip the current question.
 # -- Typing play() lets you experiment with R on your own; swirl will ignore what you do...
-# -- UNTIL you type nxt() which will regain swirl's attention.
+#    - UNTIL you type nxt() which will regain swirl's attention.
 # -- Typing bye() causes swirl to exit. Your progress will be saved.
 # -- Typing main() returns you to swirl's main menu.
 # -- Typing info() displays these options again.
@@ -58,10 +58,20 @@ swirl()
 # * use your email address gvca80-coursera@yahoo.com
 # 
 # * and tokens:
-# -- swirl Lesson 1: Basic Building Blockstoken: 1pe8Mj1cWn34dnSr
-# -- swirl Lesson 2: Workspace and Files: kIEOninegDwBDF40
-# -- 
+# -- swirl Lesson 1: Basic Building Blockstoken: 1pe8Mj1cWn34dnSr 
+# -- swirl Lesson 2: Workspace and Files: kIEOninegDwBDF40 
+# -- swirl Lesson 3: Sequences of Numbers: 0pu6E07FML2q2zDe 
+# -- swirl Lesson 4: Vectors: EO1sFKYBeyITEjb6 
+# -- swirl Lesson 5: Missing Values: Ka12SLqWdqYAl8Tn 
+# -- swirl Lesson 6: Subsetting Vectors: BEwESFxY0zCyQYX3
+# -- swirl Lesson 7: Matrices and Data Frames: ZZpMKrUms0tx4c4f1
 # 
-# Your submission token is unique to you and should not be shared with anyone. 
+# Your submission token is unique to you and shou0ld not be shared with anyone. 
 # You may submit as many times as you like.
 #
+# create a random mix of NA and samples from a normal distribution 
+# by creating 1000 samples of each and then taking 100 random samples from each:
+#   y <- rnorm(1000) #vector of 1000 samples drawn from normal distribution
+#   z <- rep(NA, 1000) #vector of 1000 NA
+#   my_data <- sample(c(y,z),100) # 100 random samples drown from union(y,z)
+

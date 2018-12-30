@@ -224,3 +224,78 @@ x*y
 x/y
 x%*%y ## true matrix multiplication aka 'dot product'
 
+x <- c(3, 5, 1, 10, 12, 6)
+x
+x[x<=5]<-0
+x
+
+
+dta <- read.csv("hw1_data.csv")
+names(dta)
+dim(dta)
+
+head(dta,2)
+tail(dta,2)
+
+dta[47,]
+
+airquality[1:10,]
+airquality[1:10,"Ozone"]
+
+O3 <- dta[1:10,"Ozone"]
+O3
+is.na(O3)
+length(O3[is.na(O3)])
+
+O3 <- dta[,"Ozone"]
+length(O3)
+length(O3[is.na(O3)])
+
+mean(O3)
+mean(O3, na.rm=TRUE)
+
+
+dta <- read.csv("hw1_data.csv")
+dim(dta)
+
+good <- complete.cases(dta[,"Ozone"], dta[,"Temp"], dta[,"Solar.R"])
+table(good)
+dta_good <- dta[good,]
+dim(dta_good)
+
+dtaOfInterest <- dta_good[dta_good[,"Ozone"] > 31, ]
+dim(dtaOfInterest)
+
+dtaOfInterest <- dtaOfInterest[dtaOfInterest[,"Temp"] > 90, ]      
+dim(dtaOfInterest)
+
+mean(dtaOfInterest[,"Solar.R"])
+
+
+dta <- read.csv("hw1_data.csv")
+dim(dta)
+
+good <- complete.cases(dta[,"Temp"], dta[,"Month"])
+table(good)
+dta_good <- dta[good,]
+dim(dta_good)
+
+dtaOfInterest <- dta_good[dta_good[,"Month"] == 6, ]
+dim(dtaOfInterest)
+
+mean(dtaOfInterest[,"Temp"])
+
+
+dta <- read.csv("hw1_data.csv")
+dim(dta)
+
+good <- complete.cases(dta[,"Ozone"], dta[,"Month"])
+table(good)
+dta_good <- dta[good,]
+dim(dta_good)
+
+dtaOfInterest <- dta_good[dta_good[,"Month"] == 5, ]
+dim(dtaOfInterest)
+
+max(dtaOfInterest[,"Ozone"])
+
