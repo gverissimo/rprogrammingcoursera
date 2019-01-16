@@ -61,8 +61,7 @@ swirl()
 # * use your email address gvca80-coursera@yahoo.com
 # 
 # * and tokens:
-# -- swirl Week3/Lesson 1 (swirl#10): lapply and sapply : hz90KrHLP2ochNKa
-# -- swirl Week3/Lesson 1 (swirl#11): vapply and tapply : WItMSgnPO39mGjsT
+# -- swirl Week4/Lesson 1 (swirl#??): ?? : 
 # 
 # 
 # Your submission token is unique to you and shou0ld not be shared with anyone. 
